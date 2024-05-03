@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Cadastro de Obras</title>
+
+    <link rel="stylesheet" type="text/css" href="C:\Users\Stéfani\Desktop\Estoque\css\geral.css">
+    <link rel="stylesheet" type="text/css" href="C:\Users\Stéfani\Desktop\Estoque\css\bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="C:\Users\Stéfani\Desktop\Estoque\css\apexcharts.css">
+    <link rel="stylesheet" type="text/css" href="C:\Users\Stéfani\Desktop\Estoque\css\bootstrap-icons.css">
+</head>
+<body>
+    <header class="navbar sticky-top flex-md-nowrap">
+        <div class="col-md-3 col-lg-3 me-0 px-3 fs-6">
+            <a class="navbar-brand d-flex align-items-center" href="inicio.html">
+                <i class="mx-2">
+                    <img src="C:\Users\Stéfani\Desktop\Estoque\imagens\lotipo.png" style="width: 155px; height: 50px;">
+                </i>
+            </a>
+        </div>
+
+        <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="dropdown px-3">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="C:\Users\Stéfani\Desktop\Estoque\imagens\user.png" class="profile-image img-fluid" alt="">
+            </a>
+            <ul class="dropdown-menu bg-white shadow">
+                <li>
+                    <div class="dropdown-menu-profile-thumb d-flex">
+                        <img src="C:\Users\Stéfani\Desktop\Estoque\imagens\user.png" class="profile-image img-fluid me-3" alt="">
+
+                        <div class="d-flex flex-column">
+                            <small>admEL</small>
+                            <a href="#">admEL@gmail.com</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="container-fluid">
+        <div class="row">
+            <nav id="sidebarMenu" class="col-md-3 col-lg-3 d-md-block sidebar collapse">
+                <div class="position-sticky py-4 px-3 sidebar-sticky">
+                    <ul class="nav flex-column h-100">
+                        <li class="nav-item active">
+                            <a class="nav-link" aria-current="page" href="inicio.html">
+                                <i class="bi-house-fill me-2"></i>
+                                Início
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="obras.html">
+                                <i class="bi-cone-striped me-2"></i>
+                                Obras
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="estoque.html">
+                                <i class="bi-archive-fill me-2"></i>
+                                Estoque
+                            </a>
+                        </li>
+                        <li class="nav-item border-top mt-auto pt-2">
+                            <a class="nav-link" href="./login.html">
+                                <i class="bi-box-arrow-left me-2"></i>
+                                Sair
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+       
+            <main class="main-wrapper col-md-9 ms-sm-auto py-4 col-lg-9 px-md-4 border-start">
+                <div class="row my-4">
+                    <div class="col-lg-20 col-12"> 
+                        <div class="custom-block bg-white">
+                            <div class="tab-content" id="myTabContent">
+                                <div class="tab-content" id="myTabContent">
+                                    <div class="tab-pane fade show active" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                                        <h6 style="text-align: center;">Cadastro de Obras</h6>
+                                        <form class="custom-form" action="#" method="post" role="form">
+                                            <input class="form-control mx-2" type="text" name="tipo-obra" id="tipo-obra" placeholder="Tipo de Obra" required="">
+                                            <input class="form-control mx-2" type="text" name="local-obra" id="local-obra" placeholder="Local da Obra" required="">
+                                            <input class="form-control mx-2" type="text" name="responavel" id="responsavel-obra" placeholder="Responsável pela obra" required="">
+                                        </form>
+                                        <h6 style="text-align: center;">Status</h6>
+                                        <form class="custom-form" action="#" method="post" role="form">
+                                            <div class="d-flex justify-content-center">
+                                                <input type="radio" name="iniciada" id="status-iniciada" value="status-iniciada">
+                                                <label class="mx-3 my-3" for="status-iniciada">Iniciada</label>
+
+                                                <input type="radio" name="Parada" id="status-parada" value="status-parada">
+                                                <label class="mx-3 my-3" for="status-parada">Parada</label>
+
+                                                <input type="radio" name="finlizada" id="status-finalizada" value="status-finalizada">
+                                                <label class="mx-3 my-3" for="status-finalizada">Finalizada</label>
+                                                </div>
+                                        
+                                            <div class="d-flex my-2">
+                                                <button type="button" class="form-control me-3">
+                                                    Cancelar
+                                                </button>
+
+                                                <button type="submit" class="form-control ms-2">
+                                                    Salvar
+                                                </button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+    <script src="C:\Users\Stéfani\Desktop\Estoque\js\custom.js"></script>
+    <script src="C:\Users\Stéfani\Desktop\Estoque\js\bootstrap.bundle.min.js"></script>
+    <script src="C:\Users\Stéfani\Desktop\Estoque\js\jquery-3.7.1.min.js"></script>
+</body>
+</html>
